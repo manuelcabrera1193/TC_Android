@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TC5</string>
+    <string name="register_button">Registrar Mascota</string>
+    <string name="register">Registro de Mascota</string>
+    <string name="name">Nombre de la mascota</string>
+    <string name="type">Tipo de la mascota</string>
+    <string name="years">Edad</string>
+    <string name="owner">Dueño</string>
+    <string name="raza">Raza</string>
+    <string name="peso">Peso</string>
+</resources>
