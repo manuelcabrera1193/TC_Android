@@ -11,40 +11,148 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.05"
-        />
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideBottomLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95"
-        />
+        app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideLeftLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1"
-        />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideRightLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9"
-        />
+        app:layout_constraintGuide_percent="0.9" />
 
-    <TextView
-        android:id="@+id/txtTextView"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sale_course"
         app:layout_constraintEnd_toEndOf="@id/guideRightLine"
         app:layout_constraintStart_toStartOf="@id/guideLeftLine"
         app:layout_constraintTop_toTopOf="@id/guideTopLine" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/name_and_lastname"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/headerInput" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerCourses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/select_course"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCourses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/headerCourses">
+
+        <RadioButton
+            android:id="@+id/radioNet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/net" />
+
+        <RadioButton
+            android:id="@+id/radioJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/java" />
+
+        <RadioButton
+            android:id="@+id/radioPhp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/php" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerDiscounts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/select_discounts"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupCourses" />
+
+    <CheckBox
+        android:id="@+id/chkDiscountFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discounts_five"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/headerDiscounts" />
+
+    <CheckBox
+        android:id="@+id/chkDiscountTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discounts_ten"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/chkDiscountFive" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalculate"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        app:layout_constraintTop_toBottomOf="@+id/chkDiscountTen" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultTextView"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_width="0dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/guideBottomLine"
+        app:layout_constraintEnd_toEndOf="@id/guideRightLine"
+        app:layout_constraintStart_toStartOf="@id/guideLeftLine"
+        android:text="@string/result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">FirstApp</string>
     <string name="sale_course">Venta de Cursos</string>
+    <string name="name_and_lastname">Nombres y Apellidos:</string>
+    <string name="select_course">Seleccione curso:</string>
+    <string name="net">Net (500 Soles)</string>
+    <string name="java">Java (400 Soles)</string>
+    <string name="php">Php (300 Soles)</string>
+    <string name="select_discounts">Seleccione descuento:</string>
+    <string name="calculate">CALCULAR PRECIO</string>
+    <string name="discounts_five">Descuento 5%</string>
+    <string name="discounts_ten">Descuento 10%</string>
+    <string name="result">Estudiante:\nCurso:\nDescuento:\nTotal a Pagar:</string>
+    <string name="student">"Estudiante:\t"</string>
+    <string name="course">"Curso:\t"</string>
+    <string name="required_name">Necesita un nombre para continuar</string>
+    <string name="required_course">Necesita un curso para continuar</string>
+    <string name="discount">"Descuento:\t"</string>
+    <string name="total">Total a Pagar:\t</string>
 </resources>
