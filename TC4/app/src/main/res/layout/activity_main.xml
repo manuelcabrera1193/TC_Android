@@ -3,116 +3,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:weightSum="3"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
 
         <LinearLayout
-            android:background="@color/celeste"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/celeste">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
-                android:text="TEXTO 01"
-                android:textStyle="bold"
+                android:layout_height="match_parent"
                 android:gravity="center"
+                android:text="@string/text1"
                 android:textColor="@color/black"
-                android:layout_height="match_parent"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:background="@color/orange"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orange">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:text="TEXTO 02"
-                android:textStyle="bold"
-                android:gravity="center"
                 android:textColor="@color/black"
-                android:layout_height="match_parent"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:background="@color/verde"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/verde">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
-                android:text="TEXTO 03"
-                android:textStyle="bold"
+                android:layout_height="match_parent"
                 android:gravity="center"
+                android:text="TEXTO 03"
                 android:textColor="@color/black"
-                android:layout_height="match_parent"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:background="@color/yellow"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="100dp"
+        android:background="@color/yellow">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
-            android:text="TEXTO 03"
-            android:textStyle="bold"
+            android:layout_height="match_parent"
             android:gravity="center"
+            android:text="TEXTO 03"
             android:textColor="@color/black"
-            android:layout_height="match_parent"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:weightSum="2"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <LinearLayout
-            android:layout_weight="1"
-            android:background="@color/celeste"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/celeste">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
-                android:text="TEXTO 05"
-                android:textStyle="bold"
+                android:layout_height="match_parent"
                 android:gravity="center"
+                android:text="TEXTO 05"
                 android:textColor="@color/black"
-                android:layout_height="match_parent"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_weight="1"
-            android:background="@color/orange"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/orange">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
-                android:text="TEXTO 06"
-                android:textStyle="bold"
+                android:layout_height="match_parent"
                 android:gravity="center"
+                android:text="TEXTO 06"
                 android:textColor="@color/black"
-                android:layout_height="match_parent"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
